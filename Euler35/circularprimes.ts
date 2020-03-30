@@ -5,7 +5,6 @@
 let P: number = 2;
 let Primes: number[] = [];
 let RotationPrimes: number[] = [];
-
 while (P < 1000000) {
     let isPrime: boolean = verifyPrime(P);
     if (isPrime) {
@@ -56,59 +55,6 @@ while (P < 1000000) {
 }
 let primesBelow100 = 13;
 console.log("Total: "+RotationPrimes.length);
-
-// while (P < 1000000) {
-//     let isPrime = verifyPrime(P);
-//     if (isPrime) {
-//         //store prime
-//         if (Primes.find(e => e == P) == undefined)
-//             Primes.push(P);
-//         // don't rotate single digits
-//         if (P < 10) {
-//             RotationPrimes.push(P);
-//             P++;
-//             continue;
-//         }
-//         // Rotate: 21=>12   11=>11
-//         let rotateValue = Rotate(P);
-//         let currentRotations: number[] = [];
-//         while (rotateValue != P) {
-//             //check prime
-//             isPrime = verifyPrime(rotateValue);
-//             if (isPrime) {
-//                 //store rotation
-//                 if (currentRotations.find(x => x == rotateValue) == undefined)
-//                     currentRotations.push(rotateValue);
-//             } else {
-//                 //break on non-prime rotation
-//                 break;
-//             }
-//             rotateValue = Rotate(rotateValue);
-//         }
-//         //use stored primeResult (bool) for rotatevalue
-//         if (isPrime) {
-//             //rotation completed => value is a rotation
-//             //rotationPrimes = rotationPrimes.concat(currentRotations);
-//             currentRotations.forEach(rotationPrime => {
-//                 if (RotationPrimes.find(element => element == rotationPrime) == undefined)
-//                     RotationPrimes.push(rotationPrime);
-//                 if (Primes.find(element => element == rotationPrime) == undefined)
-//                     Primes.push(rotationPrime);
-//             });
-//             if (RotationPrimes.find(x => x == P) == undefined)
-//                 RotationPrimes.push(P);
-//             Primes = Primes.sort((a, b) => a - b);
-//         }
-
-//     }
-//     P++;
-// }
-// RotationPrimes = RotationPrimes.sort((a, b) => a - b);
-// RotationPrimes.forEach(rPrime => {
-//     console.log(rPrime);
-// });
-// console.log("total: " + RotationPrimes.length);
-
 function verifyPrime(value: number) {
     if (value * value == value) return false;// value = 0 | 1
     if (Primes.length <= 0) {
@@ -139,12 +85,4 @@ function verifyPrime(value: number) {
         Primes.push(value);
         return true;
     }
-}
-function Rotate(value: number) {
-    if (value < 10) return value;
-    var valueString = value.toString();
-    var firstLetter = valueString.substr(0, 1);
-    var restString = valueString.substring(1, valueString.length);
-    var rotatedValueString = restString + firstLetter;
-    return parseInt(rotatedValueString);
 }
