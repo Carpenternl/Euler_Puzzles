@@ -1,7 +1,22 @@
 {
 	"folders": [
 		{
+			"path": ".vscode"
+		},
+		{
+			"path": "Digit fifth powers"
+		},
+		{
+			"path": "Distinct powers"
+		},
+		{
 			"path": "EulerCode"
+		},
+		{
+			"path": "Triangular, pentagonal, and hexagonal"
+		},
+		{
+			"path": "Euler35"
 		}
 	],
 	"settings": {}
