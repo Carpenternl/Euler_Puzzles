@@ -8,22 +8,13 @@ namespace Digit_fifth_powers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            //  Problem 30:
-            //  Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits:
-            //  1634 = 1^4 + 6^4 + 3^4 + 4^4
-            //  8208 = 8^4 + 2^4 + 0^4 + 8^4
-            //  9474 = 9^4 + 4^4 + 7^4 + 4^4
-            //  As 1 = 1^4 is not a sum it is not included.
-            //  The sum of these numbers is 1634 + 8208 + 9474 = 19316.
-            //// number = ?????
+            Console.WriteLine("Surprisingly there are only three numbers that can be written as the sum of fourth powers of their digits: ");
+            Console.WriteLine("1634 = 1^4 + 6^4 + 3^4 + 4^4");
+            Console.WriteLine("8208 = 8^4 + 2^4 + 0^4 + 8^4");
+            Console.WriteLine("9474 = 9^4 + 4^4 + 7^4 + 4^4");
+            Console.WriteLine("The sum of these numbers is 19316");
+            Console.WriteLine("Find the sum of all the numbers that can be written as the sum of fifth powers of their digits.");
 
-            //List<int> Results = getResults(5);
-            //int sum = 0;
-            //foreach (var item in Results)
-            //{
-            //    sum += item;
-            //}
             List<int> Results = new List<int>();
             for (int i = 2; i < 300000; i++)
             {
@@ -37,11 +28,12 @@ namespace Digit_fifth_powers
             {
                 sum += item;
             }
+            System.Console.WriteLine($"Answer: {sum}");
         }
 
-        private static int getSum(int j,int p)
+        private static int getSum(int number,int MathPowVal)
         {
-            string s = j.ToString();
+            string s = number.ToString();
             char[] schars = s.ToCharArray();
             int[] buffer = new int[schars.Length];
             for (int i = 0; i < buffer.Length; i++)
@@ -51,7 +43,7 @@ namespace Digit_fifth_powers
             int sum = 0;
             for (int i = 0; i < buffer.Length; i++)
             {
-                sum += (int)Math.Pow(buffer[i],p);
+                sum += (int)Math.Pow(buffer[i],MathPowVal);
             }
             return sum;
         }
