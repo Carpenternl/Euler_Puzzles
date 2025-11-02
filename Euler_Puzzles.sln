@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Distinct powers", "29 Distinct powers\Distinct powers.csproj", "{E77C1416-A303-3F19-4448-981C7F016848}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digit fifth powers", "30 Digit fifth powers\Digit fifth powers.csproj", "{47037C29-DBF3-D6FD-83A9-0DE87C7C479B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "euler33", "33 Digit Cancelling Fractions\euler33.csproj", "{54248C15-C5B2-F121-1ED4-E7001EEA2203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "34 Digit Factorials", "34 Digit Factorials\34 Digit Factorials.csproj", "{458A672B-400B-1710-5449-552EBB108703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "38 - Pandigital Primes", "38 Pandigital Primes\38 - Pandigital Primes.csproj", "{7E7132D9-6385-69C8-EB68-217B90FDC5D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E77C1416-A303-3F19-4448-981C7F016848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E77C1416-A303-3F19-4448-981C7F016848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E77C1416-A303-3F19-4448-981C7F016848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E77C1416-A303-3F19-4448-981C7F016848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47037C29-DBF3-D6FD-83A9-0DE87C7C479B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47037C29-DBF3-D6FD-83A9-0DE87C7C479B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47037C29-DBF3-D6FD-83A9-0DE87C7C479B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47037C29-DBF3-D6FD-83A9-0DE87C7C479B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54248C15-C5B2-F121-1ED4-E7001EEA2203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54248C15-C5B2-F121-1ED4-E7001EEA2203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54248C15-C5B2-F121-1ED4-E7001EEA2203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54248C15-C5B2-F121-1ED4-E7001EEA2203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458A672B-400B-1710-5449-552EBB108703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458A672B-400B-1710-5449-552EBB108703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458A672B-400B-1710-5449-552EBB108703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458A672B-400B-1710-5449-552EBB108703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E7132D9-6385-69C8-EB68-217B90FDC5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E7132D9-6385-69C8-EB68-217B90FDC5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E7132D9-6385-69C8-EB68-217B90FDC5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E7132D9-6385-69C8-EB68-217B90FDC5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D21ADF2-515A-41C3-B832-4CAF610D0232}
+	EndGlobalSection
+EndGlobal
